@@ -60,8 +60,6 @@ export default function HomeScreen({ navigation }) {
         navigation.navigate('Tweet Screen');
     }
 
-
-
     const renderItem = ({ item }) =>(
         <View style={styles.tweetContainer}>
             <TouchableOpacity onPress={() => gotoProfile()}>
