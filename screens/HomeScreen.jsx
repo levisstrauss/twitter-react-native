@@ -1,6 +1,5 @@
 import React from 'react'
-import {StyleSheet, View, Text, FlatList, Image, Platform} from 'react-native';
-import { TouchableOpacity } from "react-native-gesture-handler";
+import {StyleSheet, View, Text, FlatList, Image, Platform, TouchableOpacity } from 'react-native';
 import { EvilIcons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 
@@ -123,9 +122,10 @@ export default function HomeScreen({ navigation }) {
               )}
           />
           <TouchableOpacity style={styles.floatingButton} onPress={() => gotoNewTweet()}>
-              <AntDesign name="plus" size={26} color="white"/>
+              <AntDesign name="plus" size={26} color="white" />
           </TouchableOpacity>
       </View>
+
   );
 }
 

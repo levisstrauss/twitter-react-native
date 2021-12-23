@@ -1,20 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
-import {Button, StyleSheet, Text, View} from 'react-native';
-
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import {Button, StyleSheet, Text, View } from 'react-native';
 import React from "react";
-import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 import { Ionicons } from '@expo/vector-icons';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import HomeScreen from "./screens/HomeScreen";
 import NewTweet from "./screens/NewTweet";
+import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
+import HomeScreen from "./screens/HomeScreen";
 import TweetScreen from "./screens/TweetScreen";
 import ProfileScreen from "./screens/ProfileScreen";
 import SettingsScreen from "./screens/SettingsScreen";
 import SearchScreen from "./screens/SearchScreen";
 import NotificationScreen from "./screens/NotificationScreen";
+import {createDrawerNavigator} from "@react-navigation/drawer";
 import {NavigationContainer} from "@react-navigation/native";
-
+import {createNativeStackNavigator} from "@react-navigation/native-stack";
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -22,9 +20,7 @@ const Tab = createBottomTabNavigator();
 
 const HomeStackNavigator = () => {
     return (
-        <Stack.Navigator
-            screenOptions={{ headerShown: true, headerBackTitleVisible: false}}
-        >
+        <Stack.Navigator screenOptions={{ headerShown: true, headerBackTitleVisible: false}}>
             <Stack.Screen
                 name="Tab"
                 component={TabNavigator}

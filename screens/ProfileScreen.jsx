@@ -1,6 +1,5 @@
 import React from 'react'
-import {View, Text, StyleSheet, Image, Linking, FlatList} from 'react-native';
-import {TouchableOpacity} from "react-native-gesture-handler";
+import {View, Text, StyleSheet, Image, Linking, FlatList, TouchableOpacity } from 'react-native';
 import {EvilIcons} from "@expo/vector-icons";
 
 
@@ -102,7 +101,7 @@ export default function ProfileScreen() {
                     <EvilIcons name="link" size={24} color="gray"/>
                     <Text style={styles.linkColor}>laracasts.com</Text>
                 </TouchableOpacity>
-                <View  style={[styles.linkItem, styles.ml4]} >
+                <View style={[styles.linkItem, styles.ml4]} >
                     <EvilIcons name="calendar" size={24} color="gray"/>
                     <Text style={styles.textGray}>Joined March 2009</Text>
                 </View>
