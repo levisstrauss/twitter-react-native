@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import {Button, StyleSheet, Text, View} from 'react-native';
-import {NavigationContainer, useFocusEffect} from '@react-navigation/native';
+
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from "react";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
@@ -13,47 +13,8 @@ import ProfileScreen from "./screens/ProfileScreen";
 import SettingsScreen from "./screens/SettingsScreen";
 import SearchScreen from "./screens/SearchScreen";
 import NotificationScreen from "./screens/NotificationScreen";
+import {NavigationContainer} from "@react-navigation/native";
 
-
-
-//Home Screen
-// function HomeScreen({ navigation }) {
-//   return (
-//       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-//         <Text>Home Screen</Text>
-//         <Button
-//             title="Go to Details"
-//             onPress={() => navigation.navigate('Details', {
-//               itemId: 86,
-//               otherParam: 'anything you want here',
-//             })
-//             }
-//         />
-//       </View>
-//   );
-// }
-//
-// // Detail Screen
-// function DetailsScreen({ route }) {
-//   useFocusEffect(
-//       React.useCallback(() => {
-//          console.log('details screen focused')
-//         return () => {
-//           console.log('details screen unfocused')
-//         };
-//       }, [])
-//   );
-
-  // const { itemId, otherParam } = route.params;
-
-//   return (
-//       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-//         {/*<Text>Details Screen for {itemId}</Text>*/}
-//         {/*<Text>{otherParam}</Text>*/}
-//         <Text>Details Screen</Text>
-//       </View>
-//   );
-// }
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -139,34 +100,6 @@ export default function App() {
   );
 }
 
-// <Tab.Screen
-//     name="Details"
-//     component={DetailsScreen}
-//     options={{
-//         tabBarLabel: 'Details',
-//         tabBarIcon: ({color, size}) => (
-//             <Ionicons name="settings" size={size} color={color} />
-//         )
-//     }}/>
-
-
-
-
-
-// export default function App() {
-//   return (
-//       <NavigationContainer>
-//         <Stack.Navigator>
-//           <Stack.Screen
-//               name="Home"
-//               component={HomeScreen}
-//               options={{ title: 'My home' }}
-//           />
-//           <Stack.Screen name="Details" component={DetailsScreen} />
-//         </Stack.Navigator>
-//       </NavigationContainer>
-//   );
-// }
 
 
 
