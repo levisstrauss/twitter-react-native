@@ -12,5 +12,4 @@ NB: the app is still in development mode
 -----------Here are some of the screens done------------
 
 ![Profile](assets/img/Profile.png)
-![Home](assets/img/Home.png)
 ![Tweet](assets/img/Tweet.png)
